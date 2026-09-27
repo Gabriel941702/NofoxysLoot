@@ -1,0 +1,30 @@
+## Interface: 30300
+## Title: Nofoxy's Loot
+## Notes: Master Loot rolls, softres.it Soft-Reserve integration, and quality-threshold auto-loot.
+## Author: You
+## Version: 1.0.0
+## SavedVariables: Nofoxy_SavedVars
+
+## Load order:
+##   1. Locale     — roll-parsing patterns (no Nofoxy reference)
+##   2. Domain     — SoftRes, AutoLoot, MasterLoot (reference Nofoxy inside functions only)
+##   3. Parser     — chat message routing (same)
+##   4. UI         — Primitives, tab renderers, Frame (same)
+##   5. Core       — LAST: creates NofoxyCore frame, sets global Nofoxy,
+##                   registers events. By this point all modules are defined.
+
+Locales\enUS.lua
+
+SoftRes.lua
+AutoLoot.lua
+MasterLoot.lua
+Parser.lua
+
+UI\Primitives.lua
+UI\MasterLootUI.lua
+UI\SoftResUI.lua
+UI\OptionsUI.lua
+UI\Frame.lua
+UI\Minimap.lua
+
+Core.lua

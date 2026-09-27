@@ -1,0 +1,12 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor junk
+.vscode/
+.idea/
+*.swp
+
+# WoW client SavedVariables backup files, if you ever copy them in by mistake
+*.lua.bak
+WTF/
